@@ -9,7 +9,7 @@ import tiktoken
 from .base_model import BaseMLModel
 import os
 
-OPENAI_API_KEY=os.environ['OPENAI_API_KEY']
+OPENAI_API_KEY=os.environ.get('OPENAI_API_KEY', '')
 openai.api_key = OPENAI_API_KEY
 
 

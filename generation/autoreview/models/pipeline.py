@@ -6,7 +6,7 @@ This file defines class to calculate summaries
 import os
 # os.environ["HF_HOME"] = "/mnt/home/cached/"
 # os.environ["TORCH_HOME"] = "/mnt/home/cached/"
-HF_TOKEN = os.environ['HF_TOKEN']
+HF_TOKEN = os.environ.get('HF_TOKEN', '')
 
 from json.decoder import JSONDecodeError
 from typing import Any

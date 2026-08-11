@@ -17,7 +17,7 @@ from langchain.prompts import (
 
 from langchain.chat_models import ChatOpenAI
 
-API_KEY = os.environ["OPENAI_API_KEY"]
+API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 class OpenAIAgent:
     """

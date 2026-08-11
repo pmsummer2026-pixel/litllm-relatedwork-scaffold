@@ -1,7 +1,7 @@
 import time
 import openai
 import os
-ANYSCALE_ENDPOINT_API_KEY = os.environ['ANYSCALE_ENDPOINT_API_KEY']
+ANYSCALE_ENDPOINT_API_KEY = os.environ.get('ANYSCALE_ENDPOINT_API_KEY', '')
 
 
 def anyscale_chat_complete(prompt, engine, temp=0.7, max_tokens=500):

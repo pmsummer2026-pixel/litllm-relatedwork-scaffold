@@ -36,7 +36,7 @@ class AnthropicAgent:
     OpenAIAgent for use in plan_based_generation.py.
     """
 
-    def __init__(self, model_name="claude-3-5-sonnet-20241022", prompt_name="prompt_action_gpt", max_tokens=1024):
+    def __init__(self, model_name="claude-3-5-sonnet-20241022", prompt_name="prompt_action_gpt", max_tokens=4096):
         super().__init__()
         self.model_name = model_name
         self.max_tokens = max_tokens

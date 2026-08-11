@@ -282,7 +282,7 @@ def parse_args() -> argparse.Namespace:
         default="gpt-4",
         choices=["gpt-3.5-turbo", "gpt-4", "meta-llama/Llama-2-7b-chat-hf", "meta-llama/Llama-2-13b-chat-hf",
                  "meta-llama/Llama-2-70b-chat-hf", "codellama/CodeLlama-34b-Instruct-hf",
-                 "claude-3-5-sonnet-20241022", "claude-3-5-haiku-20241022",
+                 "claude-3-5-sonnet-20241022", "claude-3-5-haiku-20241022", "claude-sonnet-4-5-20250929", "claude-haiku-4-5-20251001",
                  "claude-3-opus-20240229", "claude-sonnet-4-20250514"],
         help="Model name",
     )
